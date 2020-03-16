@@ -1,0 +1,337 @@
+body {
+    @extend %Fonts;
+    background-color: $varBgc;
+}
+
+.for-flex {
+    .b-logo {
+        color: #333333;
+        font-size: 36px;
+        text-transform: uppercase;    
+        line-height: 36px;
+        &:first-letter {
+            font-size: 46px;
+            line-height: 46px;
+        }
+        @media all and (max-width: 576px) {
+        font-size: 25px;
+        }
+    }
+    .b-logo_margin {
+        margin-top: 36px;
+    }
+}
+    .b-socials {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        max-width: 240px;
+        max-height: 50px;
+        background-color: #81b300;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        .b-socials__icon {
+            margin: 8px;
+            color: #fff;
+            background-color: #1f1f1f;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            &:hover {
+                background-color: #00acee;
+                cursor: pointer;
+            }  
+        }
+    }
+.b-login {
+    font-size: 12px;
+    line-height: 14.4px;
+    .b-login__link {
+        text-decoration: none;
+        .b-login__span:hover {
+            color: blue;
+        }
+    }
+    .b-login__span {
+        color: #81b300;
+    }
+    .b-login__link:nth-last-child(n+2):after {
+        content: ' | ';
+        color: #81b300;
+    }
+}
+.b-login_top {
+    margin-top: 35px;
+}
+
+.b-header {
+    margin: 0 -30px;
+    background-color: #81b300;
+    padding: 0 30px;
+    .b-header__link {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 10px;
+        line-height: 70px;
+        &:hover .b-header__span {
+            color: #000000;
+        }
+        @media all and (max-width: 768px) {
+        display: block;
+    }
+    }
+    .b-header__span {
+        line-height: 13px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    .b-search {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        padding: 20px;
+        .b-search__input {
+            width: 100%;
+            padding: 3px;
+            margin-right: -5px;
+            border: none;
+        }
+        .b-search__button {
+            background-color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 14.4px;
+            text-transform: uppercase;
+            color: #81b300;
+            width: 65px;
+            height: 30px;
+            border: none;
+            &:hover {
+                background-color: #81b300;
+                color: #fff;
+                outline: 1px solid #fff;
+            }
+        }
+        @media (min-width: 992px) {
+            float: right;
+        }
+    }  
+}
+
+.b-mainInfo {
+    max-width: 205px;
+    text-align: center;
+    .b-mainInfo__img {
+    }
+    .b-mainInfo__h3 {
+        font-size: 18px;
+        line-height: 21.6px;
+        color: #81b300;
+        margin: 20px auto;
+    }
+    .b-mainInfo__text {
+        line-height: 20.8px;
+        color: #888888;
+    }
+}
+
+.b-projectInfo {
+    text-align: left;
+    max-width: 210px;
+    .b-projectInfo__borderImg {
+        padding: 4px;
+        /*border: 1px solid #e2e2e2;*/
+        background-color: #fff;
+        .b-projectInfo__img {
+            height: 130px;
+            display: block;
+            
+        }
+        .b-projectInfo__img1 {
+            background: url(../img/1fcfeddfb1b9f337f61053293ee3c6a9.jpeg);
+            background-size: cover;
+        }
+        .b-projectInfo__img2 {
+            background: url(../img/_23-2147571302.jpg);
+            background-size: cover;
+        }
+        .b-projectInfo__img3 {
+            background: url(../img/thumbnail-kanada-gocmenlerini-ariyor-dc2be.png);
+            background-size: cover;
+        }
+        .b-projectInfo__img4 {
+            background: url(../img/meeting_01.jpg);
+            background-size: cover;
+        }
+    }
+    .b-projectInfo__h5 {
+        line-height: 16.8px;
+        font-size: 14px;
+        color: #444444;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .b-projectInfo__text {
+        line-height: 20.8px;
+        color: #878787;
+    }
+    .b-projectInfo__link {
+        line-height: 13px;
+        color: #81b300;
+        float: right;
+        &:hover {
+            color: darkgreen;
+            text-decoration: none;
+        }
+    }
+}
+
+.b-footer {
+    background-color: #3b3b3b;
+    padding: 40px 30px;
+    margin: 0 -30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .b-contact {
+        width: 200px;
+        .b-contact__h4 {
+            @extend %Fonts;
+            line-height: 15.6px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+        .b-contact__text {
+            line-height: 19.2px;
+            color: #999999;
+        }
+    }
+    .b-quickLinks {
+        width: 200px;
+        .b-quickLinks__h4 {
+            line-height: 15.6px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 30px;
+            @extend %Fonts;
+        }
+        .b-quickLinks__link {
+            text-decoration: none;
+            line-height: 14.4px;
+            color: #999999;
+            margin: 10px auto;
+            display: block;
+            &:hover {
+                color: aquamarine;
+            }
+        }
+        .b-quickLinks__diliver {
+            background-color: #484848;
+            width: 100%;
+            height: 1px;
+        }
+    }
+    .b-blog {
+        width: 200px;
+        .b-blog__h4 {
+            line-height: 15.6px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 30px;
+            @extend %Fonts;
+        }
+        .b-blog__post {
+            @extend %Fonts;
+            font-weight: bold;
+            line-height: 15.6px;
+            color: #999999;
+        }
+        .b-blog__text {
+            font-size: 11px;
+            line-height: 13.2px;
+            color: #999999;
+        }
+        .b-blog__text2 {
+            font-size: 12px;
+            line-height: 19.2px;
+            color: #999999;
+        }
+        .b-blog__link {
+            font-size: 12px;
+            line-height: 14.4px;
+            color: #81b300;
+            text-decoration: none;
+            float: right;
+            &:hover {
+                color: lawngreen;
+            }
+        }
+    }
+    .b-logIn {
+        width: 200px;
+        .b-logIn__h4 {
+            @extend %Fonts;
+            line-height: 15.6px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 30px;
+        }
+        .b-logIn__name,
+        .b-logIn__mail {
+            background-color: #1f1f1f;
+            color: #999999;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            padding: 10px;
+            line-height: normal;
+            width: 100%;
+        }
+        .b-logIn__button {
+            width: 80px;
+            background-color: #1f1f1f;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #81b300;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            line-height: normal;
+            &:hover {
+                background-color: #81b300;
+                color: #1f1f1f;
+            }
+        }
+    }
+}
+
+.b-footer2 {
+    background-color: #2e2e2e;
+    padding: 22px 30px;
+    margin: 0 -30px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .b-footer2__copy,
+    .b-footer2__text {
+        color: #737373;
+        line-height: 14.4px;
+    }
+}
+
+
